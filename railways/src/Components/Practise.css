@@ -1,0 +1,69 @@
+.side_a,
+.side_b {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  backface-visibility: hidden;
+  align-items: center;
+  height: 200px;
+  width: 300px;
+}
+
+.side_a {
+  z-index: 10;
+}
+
+.side_b {
+  transform: rotateY(180deg);
+}
+
+.wrap {
+  margin: 3%;
+  height: 213px;
+  width: 300px;
+  transform-style: preserve-3d;
+  transition: 1.2s;
+  border-radius: 8%;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgb(255, 255, 255), 0 6px 20px 0 rgb(255, 255, 255);
+}
+
+.wrap:hover {
+  transform: rotateY(180deg);
+  transition: 1.2s;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-self: center;
+  /* margin-right: -15px; */
+}
+
+.card_header {
+  background-color: black;
+  color: white;
+  /* margin-left: -6%; */
+  width: 109%;
+}
+
+.card_body {
+  background-color: black;
+  color: white;
+  /* position: absolute; */
+  /* margin-left: 1%; */
+  width: 91%;
+}
+
+/* .card_item {
+  display: flex;
+  background-color: red;
+  width: 100%;
+  height: 100%;
+}
+
+.list_item {
+  display: flex;
+  flex-direction: row;
+} */

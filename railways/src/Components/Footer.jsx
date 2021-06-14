@@ -36,15 +36,13 @@ export default function Footer() {
             </a>
           </div>
         </div>
+        <div className="para  ">
+          <p>Copyright &copy; 2021, Centre For Railway Information Systems.</p>
+        </div>
         <div data-aos="fade-left" className="train_logo">
           <img className="img" src={Train} alt="Logo" />
         </div>
       </div>
-      <footer>
-        <div className="para  ">
-          <p>Copyright &copy; 2021, Centre For Railway Information Systems.</p>
-        </div>
-      </footer>
     </div>
   );
 }

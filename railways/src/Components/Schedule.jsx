@@ -7,9 +7,8 @@ export default function Schedule(props) {
   const date = new Date().toDateString();
   const time = new Date().toTimeString().slice(0, 9);
   const [Time, setTime] = useState(time);
-
   const [value, setvalue] = useState("");
-
+  const [styles, setstyles] = useState("");
   function get_time() {
     let time = new Date().toTimeString().slice(0, 9);
     setTime(time);
@@ -22,10 +21,11 @@ export default function Schedule(props) {
 
   function clicked() {
     setvalue(<Display />);
+    setstyles("150vh");
   }
 
   return (
-    <div className="bottom">
+    <div className="bottom" style={{ height: styles }}>
       <div data-aos="fade-up" className="schedule">
         <div className="title_head">
           <h2>Train Schedule</h2>
@@ -58,7 +58,7 @@ export default function Schedule(props) {
         </div>
         <div data-aos="fade-left" className="train_no">
           <label className="label">
-            <h4>Select the date</h4>
+            <h4>Select the date </h4>
           </label>
           <input type="date" className="input" />
         </div>
@@ -79,13 +79,8 @@ export default function Schedule(props) {
           </h6>
         </div>
       </div>
-
-      <div
-        id="container"
-        style={{ backgroundColor: "white" }}
-        className="container row container-fluid"
-      >
-        {value}{" "}
+      <div id="container" className="container row container-fluid">
+        {value}
       </div>
     </div>
   );

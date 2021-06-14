@@ -1,10 +1,9 @@
 .bottom {
+  height: 80vh;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-around;
-  height: 60vh;
-  position: relative;
 }
 
 .title_head {
@@ -18,7 +17,6 @@
 }
 
 .date {
-  background-color: black;
   color: white;
   display: flex;
   flex-wrap: wrap;

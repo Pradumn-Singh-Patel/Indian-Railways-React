@@ -6,7 +6,8 @@
 .media_logo {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .social {
@@ -34,4 +35,9 @@ footer {
 
 div a img:hover {
   transform: scale(1.1);
+}
+
+.para {
+  color: white;
+  margin-right: 17%;
 }
