@@ -1,16 +1,18 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Header from "./Header";
-import Train from "./Train";
+import Trains from "./Trains";
 import Schedule from "./Schedule";
+import Footer from "./Footer";
 
 export default function Dashboard() {
   return (
-    <div>
-      {/* <Navbar />
+    <div style={{ backgroundColor: "black" }}>
+      <Navbar />
       <Header />
-      <Train /> */}
+      <Trains />
       <Schedule />
+      <Footer />
     </div>
   );
 }

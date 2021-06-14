@@ -1,0 +1,37 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.media_logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+}
+
+.call {
+  width: 9%;
+  height: 6vh;
+  margin: 5%;
+}
+
+.train_logo {
+  width: 7%;
+  height: 13vh;
+  margin: 1%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+div a img:hover {
+  transform: scale(1.1);
+}

@@ -3,28 +3,7 @@ import "./Navbar.css";
 
 export default function Navbar() {
   return (
-    // <div classNameNameName="nav">
-    //   <div classNameNameName="bars">
-    //     <div classNameNameName="enquiry">
-    //       <h5>PNR Enquiry</h5>
-    //     </div>
-    //     <div classNameNameName="enquiry">
-    //       <h5>PNR Enquiry</h5>
-    //     </div>
-    //     <div classNameNameName="enquiry">
-    //       <h5>PNR Enquiry</h5>
-    //     </div>
-    //     <div classNameNameName="enquiry">
-    //       <h5>PNR Enquiry</h5>
-    //     </div>
-    //     <div classNameNameName="enquiry">
-    //       <h5>PNR Enquiry</h5>
-    //     </div>
-    //   </div>
-    //   <div classNameNameName="search">hello</div>
-    // </div>
-
-    <div classNameName="nav">
+    <div classNameName="nav" style={{ position: "sticky", top: 0 }}>
       <nav className="navbar navbar-expand-lg navbar-dark">
         <a className="navbar-brand" href="#">
           <h5>ENQUIRY</h5>
