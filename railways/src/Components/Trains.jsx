@@ -19,7 +19,7 @@ export default function Trains() {
         </marquee>
       </div>
       <div className="train">
-        <div data-aos="fade-left" className="card">
+        {/* <div data-aos="fade-left" className="card">
           <h4>BOOK </h4>
           <h4>YOUR TICKET</h4>
           <h4>
@@ -48,7 +48,7 @@ export default function Trains() {
           <button type="button" className="btn btn-outline-primary" id="btn">
             <h5>Find Trains</h5>
           </button>
-        </div>
+        </div> */}
         <video className="video" autoPlay muted loop>
           <source src={Train_video} type="video/mp4" />
         </video>

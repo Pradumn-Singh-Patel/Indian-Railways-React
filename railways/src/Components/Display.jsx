@@ -2,7 +2,7 @@ import React from "react";
 import Detail from "./List";
 import Practise from "./Practise";
 
-export default function Display() {
+export default function Display(props) {
   function display(val) {
     return (
       <Practise
@@ -15,5 +15,9 @@ export default function Display() {
       />
     );
   }
-  return <>{Detail.map(display)}</>;
+  return props.show === "pass" ? (
+    Detail.map(display)
+  ) : (
+    <Practise show={"fail"} />
+  );
 }
