@@ -7,15 +7,14 @@ export default function Trains() {
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
+
   return (
     <div className="content">
       <div className="row">
         <marquee className="marquee" direction="left">
-          <h5 style={{ color: "white" }}>
-            Welcome to Indian Ralways page. Please help Indian railways and
-            government of India in moving towards a digitalized and cashless
-            economy, please scroll below for querry.
-          </h5>
+          Welcome to Indian Ralways page. Please help Indian railways and
+          government of India in moving towards a digitalized and cashless
+          economy, please scroll below for querry.
         </marquee>
       </div>
       <div className="train">

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useWindowDimensions } from "react";
 import "./Schedule.css";
 import Aos from "aos";
 import Display from "./Display";
@@ -28,7 +28,9 @@ export default function Schedule() {
       select_date >= new Date().toISOString().slice(0, 10)
     ) {
       setvalue(<Display show={"pass"} />);
-      setstyles("150vh");
+      {
+        window.innerWidth > 550 ? setstyles("150vh") : setstyles("250vh");
+      }
     } else {
       setvalue(<Display show={"fail"} />);
       setstyles("120vh");
@@ -38,9 +40,7 @@ export default function Schedule() {
   return (
     <div className="bottom" style={{ height: styles }}>
       <div data-aos="fade-up" className="schedule">
-        <div className="title_head">
-          <h2>Train Schedule</h2>
-        </div>
+        <div className="title_head">Train Schedule</div>
         <div className="date">
           <h6>{date}</h6>
         </div>
@@ -50,17 +50,16 @@ export default function Schedule() {
       </div>
       <div>
         <marquee className="marquee1" direction="left">
-          <h5 style={{ color: "white" }}>
-            Please enter the Train Number and select the Date and then click on
-            get schedule.
-          </h5>
+          Please enter the Train Number and select the Date and then click on
+          get schedule.
         </marquee>
       </div>
       <div className="detail">
-        <div data-aos="fade-right" className="train_no">
-          <label className="label">
-            <h4>Enter Train Number</h4>
-          </label>
+        <div
+          data-aos={window.innerWidth > 550 ? "fade-right" : "fade-up"}
+          className="train_no"
+        >
+          <label className="label">Enter Train Number</label>
           <input
             type="number"
             className="input"
@@ -68,13 +67,14 @@ export default function Schedule() {
             onChange={(event) => settrain_no(event.target.value)}
           />
         </div>
-        <div data-aos="fade-left" className="train_no">
-          <label className="label">
-            <h4>Select the date </h4>
-          </label>
+        <div
+          data-aos={window.innerWidth > 550 ? "fade-left" : "fade-up"}
+          className="train_no"
+        >
+          <label className="label">Select the date</label>
           <input
             type="date"
-            className="input"
+            className="input1"
             onChange={(event) => setselect_date(event.target.value)}
           />
         </div>
@@ -88,11 +88,9 @@ export default function Schedule() {
         >
           <h5>Get Schedule</h5>
         </button>
-        <div style={{ marginTop: ".5%" }}>
-          <h6>
-            *Train Schedule is shown only for reserved trains defined in the PRS
-            system.
-          </h6>
+        <div className="note" style={{ marginTop: "1%" }}>
+          *Train Schedule is shown only for reserved trains defined in the PRS
+          system.
         </div>
       </div>
       <div id="container" className="container row container-fluid">

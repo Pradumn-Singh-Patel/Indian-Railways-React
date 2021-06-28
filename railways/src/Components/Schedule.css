@@ -1,15 +1,18 @@
 .bottom {
-  height: 80vh;
+  padding-top: 2%;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .title_head {
   background-color: blue;
   color: white;
-  height: 9vh;
+  font-size: 28px;
+  font-weight: 500;
+  height: 7vh;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -30,13 +33,23 @@
   justify-content: space-evenly;
 }
 
-.input {
+.marquee1 {
+  font-size: 25px;
+  color: white;
+  font-weight: 400;
+}
+
+.input,
+.input1 {
   height: 5vh;
+  width: 30vh;
 }
 
 .label {
   padding-right: 30px;
   color: white;
+  font-size: large;
+  font-weight: 500;
   display: inline-block;
 }
 
@@ -50,4 +63,34 @@
 .train_no {
   display: flex;
   align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .marquee1 {
+    font-size: 18px;
+    color: white;
+    font-weight: 400;
+  }
+
+  .detail {
+    height: 15vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .input {
+    height: 4vh;
+    width: 42%;
+  }
+
+  .input1 {
+    height: 4vh;
+    margin-left: 4%;
+    width: 48%;
+  }
+
+  .note {
+    font-size: 11px;
+  }
 }

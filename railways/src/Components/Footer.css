@@ -1,6 +1,7 @@
-.footer {
+/* .footer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .media_logo {
@@ -41,4 +42,68 @@ div a img:hover {
 .para {
   color: white;
   margin-right: 17%;
+}
+
+.footer {
+  color: wheat;
+} */
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 23vh;
+  align-items: center;
+  justify-content: space-around;
+  /* padding-top: 7%; */
+}
+
+.social_logo {
+  display: flex;
+  flex-direction: row;
+}
+
+.call {
+  width: 11%;
+  height: 7vh;
+  margin: 5%;
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+}
+
+div a img:hover {
+  transform: scale(1.1);
+}
+
+.para {
+  color: white;
+  margin-right: 17%;
+}
+
+.train_logo {
+  height: 18vh;
+  width: 12%;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    height: 50vh;
+  }
+
+  .social_logo {
+    justify-content: center;
+  }
+
+  .train_logo {
+    width: 30%;
+  }
+
+  .para {
+    margin-right: 0;
+    margin-left: 3%;
+  }
 }
