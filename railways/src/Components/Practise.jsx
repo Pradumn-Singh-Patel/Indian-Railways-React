@@ -39,19 +39,6 @@ export default function Practise(props) {
             <h1>
               Invalid Date <br /> or Time
             </h1>
-            {/* <div className="card-header">
-              <h2 className="card_header"> Invalid </h2>
-            </div>
-            <div className="card_body card-body">
-              <blockquote className="blockquote mb-0 ">
-                <h3>
-                  Invalid
-                  <br />
-                  <br />
-                  Invalid
-                </h3>
-              </blockquote>
-            </div> */}
           </div>
         </div>
       )}
