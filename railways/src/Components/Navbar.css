@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  background-color: rgb(40, 40, 211);
+  color: white;
+}
+
+.form-inline {
+  display: flex;
+  width: 25%;
+}
+
+.btn {
+  border-radius: 10px;
+}
+
+li a h6:hover {
+  transform: scale(1.1);
+  color: yellow;
+}

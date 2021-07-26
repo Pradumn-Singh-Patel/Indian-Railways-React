@@ -1,0 +1,104 @@
+.bottom {
+  padding-top: 2.3rem;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.title_head {
+  background-color: blue;
+  color: white;
+  font-size: 28px;
+  font-weight: 500;
+  height: 7vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.date {
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.marquee1 {
+  font-size: 25px;
+  color: white;
+  font-weight: 400;
+}
+
+.input,
+.input1 {
+  height: 5vh;
+  width: 30vh;
+}
+
+.label {
+  padding-right: 30px;
+  color: white;
+  font-size: large;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.train_no {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .marquee1 {
+    font-size: 18px;
+    color: white;
+    font-weight: 400;
+  }
+
+  .detail {
+    height: 15vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .input {
+    height: 4vh;
+    width: 42%;
+  }
+
+  .input1 {
+    height: 4vh;
+    margin-left: 4%;
+    width: 48%;
+  }
+
+  .note {
+    font-size: 11px;
+  }
+
+  .label {
+    text-align: left;
+  }
+
+  .bottom {
+    padding-top: 0rem;
+  }
+}
