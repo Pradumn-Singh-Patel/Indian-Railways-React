@@ -1,7 +1,7 @@
 import React from "react";
-import "./Practise.css";
+import "./Card.css";
 
-export default function Practise(props) {
+export default function Card(props) {
   return (
     <>
       {props.show != "fail" ? (

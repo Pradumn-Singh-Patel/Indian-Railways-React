@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./Trains.css";
 import Aos from "aos";
-import Train_video from "../assets/Videos/Train_video.mp4";
+import Train_video from "../../assets/Videos/Train_video.mp4";
 
 export default function Trains() {
   useEffect(() => {

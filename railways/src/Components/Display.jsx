@@ -1,6 +1,6 @@
 import React from "react";
 import Detail from "./List";
-import Practise from "./Practise";
+import Practise from "./Card/Card";
 
 export default function Display(props) {
   function display(val) {

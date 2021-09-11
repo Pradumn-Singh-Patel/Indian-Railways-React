@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import Aos from "aos";
 import "./Footer.css";
-import Call from "../assets/Images/Call.jpg";
-import Fb from "../assets/Images/Fb.jpg";
-import Gmail from "../assets/Images/Gmail.jpg";
-import Twiter from "../assets/Images/Twiter.jpg";
-import Train from "../assets/Images/Train.jpg";
+import Call from "../../assets/Images/Call.jpg";
+import Fb from "../../assets/Images/Fb.jpg";
+import Gmail from "../../assets/Images/Gmail.jpg";
+import Twiter from "../../assets/Images/Twiter.jpg";
+import Train from "../../assets/Images/Train.jpg";
 
 export default function Footer() {
   useEffect(() => {

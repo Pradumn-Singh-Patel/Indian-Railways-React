@@ -1,7 +1,7 @@
-import React, { useState, useEffect, useWindowDimensions } from "react";
+import React, { useState, useEffect } from "react";
 import "./Schedule.css";
 import Aos from "aos";
-import Display from "./Display";
+import Display from "../Display";
 
 export default function Schedule() {
   const date = new Date().toDateString();

@@ -1,6 +1,6 @@
 .bottom {
   padding-top: 2.3rem;
-  height: 70vh;
+  height: 28rem;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -12,7 +12,7 @@
   color: white;
   font-size: 28px;
   font-weight: 500;
-  height: 7vh;
+  height: 3rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -41,8 +41,8 @@
 
 .input,
 .input1 {
-  height: 5vh;
-  width: 30vh;
+  height: 2rem;
+  width: 12rem;
 }
 
 .label {
@@ -74,21 +74,21 @@
   }
 
   .detail {
-    height: 15vh;
+    height: 9rem;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
   }
 
   .input {
-    height: 4vh;
-    width: 42%;
+    height: 2.2rem;
+    width: 10rem;
   }
 
   .input1 {
-    height: 4vh;
+    height: 2.2rem;
     margin-left: 4%;
-    width: 48%;
+    width: 10rem;
   }
 
   .note {
@@ -97,6 +97,7 @@
 
   .label {
     text-align: left;
+    width: 12rem;
   }
 
   .bottom {

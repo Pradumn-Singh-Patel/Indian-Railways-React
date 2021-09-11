@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.css";
-import Logo from "../assets/Images/Logo.jpg";
-import Loin from "../assets/Images/Loin.jpg";
+import Logo from "../../assets/Images/Logo.jpg";
+import Loin from "../../assets/Images/Loin.jpg";
 
 export default function Header() {
   return (
