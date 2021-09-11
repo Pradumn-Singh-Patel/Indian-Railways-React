@@ -4,6 +4,10 @@
   flex-direction: column;
 }
 
+.row {
+  width: 100%;
+}
+
 .marquee {
   color: white;
   font-size: 25px;
